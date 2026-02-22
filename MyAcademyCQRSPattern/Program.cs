@@ -1,3 +1,4 @@
+ï»¿using Microsoft.EntityFrameworkCore;
 using MyAcademyCQRSPattern.CQRSPattern.Handlers;
 using MyAcademyCQRSPattern.DataAccess.Context;
 using System.Reflection;
@@ -15,7 +16,8 @@ builder.Services.AddScoped<GetCustomerByIdQueryHandler>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly()); //automapper konfigurasyonu
 
-builder.Services.AddDbContext<Context>();  //  DbContext’imiz de OneMusicContext olarak belirtiriz. Bunu vermezsek projeyi çal??t?ramay?z!!
+builder.Services.AddDbContext<Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
