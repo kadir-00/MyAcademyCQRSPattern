@@ -3,19 +3,38 @@
     ViewData["Title"] = "UpdateCustomer";
 }
 
-<h1>Müşteri Güncelle</h1>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Müşteri Güncelle</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="CustomerID" />
 
-<form method="post">
-    <input type="hidden" asp-for="CustomerID" />
-    <label>Ad</label>
-    <input type="text" asp-for="Name" class="form-control" />
-    <br />
-    <label>Soyad</label>
-    <input type="text" asp-for="Surname" class="form-control" />
-    <br />
-    <label>Şehir</label> 
-    <input type="text" asp-for="City" class="form-control" />
-    <br />
-    <button class="btn btn-primary">Güncelle</button>
-</form>
+                    <div class="mb-3">
+                        <label class="form-label">Ad</label>
+                        <input type="text" asp-for="Name" class="form-control" />
+                    </div>
 
+                    <div class="mb-3">
+                        <label class="form-label">Soyad</label>
+                        <input type="text" asp-for="Surname" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Şehir</label>
+                        <input type="text" asp-for="City" class="form-control" />
+                    </div>
+
+                    <button class="btn btn-primary w-100">Güncelle</button>
+
+                    <div class="text-center">
+                        <a href="/Customer/Index/" class="btn btn-secondary mt-3">Listeye Dön</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
