@@ -92,8 +92,6 @@ Projenin temel amacı; kurumsal yazılım mimarilerinde sıkça tercih edilen \*
 
 | \*\*Operasyonlar\*\* | Müşteri CRUD İşlemleri |
 
-| \*\*Eğitim Kurumu\*\* | M\&Y Yazılım Eğitim Akademi Danışmanlık |
-
 
 
 \---
