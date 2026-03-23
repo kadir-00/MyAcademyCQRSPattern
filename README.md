@@ -1,4 +1,4 @@
-!\[.NET Core](https://img.shields.io/badge/.NET%20Core-CQRS%20Project-512BD4?logo=dotnet\&logoColor=white)
+!\[.NET Core](https://img.shields.io/badge/.NET%20Core-CQRS%20Project-512BD4?logo=dotnet&logoColor=white)
 
 !\[Design Pattern](https://img.shields.io/badge/Architecture-CQRS%20Pattern-blue)
 
